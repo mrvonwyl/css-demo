@@ -1,0 +1,25 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+}
+
+a {
+  text-decoration: none;
+  color: $color-highlight;
+
+  &.active {
+    background: $color-base;
+    color: $color-highlight;
+  }
+
+  &:hover {
+    background: $color-highlight;
+    color: $color-base;
+  }
+}

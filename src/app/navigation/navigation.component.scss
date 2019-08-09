@@ -1,0 +1,10 @@
+@import "../../styles";
+
+nav {
+  background: #bbb;
+
+  a {
+    padding: $spacing;
+    display: inline-block;
+  }
+}
