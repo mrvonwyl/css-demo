@@ -31,6 +31,23 @@ a {
 .demo-wrapper {
   display: flex;
   justify-content: space-between;
+
+  .demo {
+    width: 60%;
+  }
+
+  .desc {
+    width: 40%;
+  }
+}
+
+.element {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .green {

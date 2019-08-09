@@ -1,0 +1,23 @@
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 100px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30px;
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}

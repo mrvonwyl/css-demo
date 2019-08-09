@@ -1,1 +1,96 @@
-<p>display works!</p>
+<h1>Display</h1>
+<p>
+  info:
+  <a
+    href="https://www.w3schools.com/CSSref/pr_class_display.asp"
+    target="_blank"
+    >w3schools</a
+  >
+</p>
+<p>default: <i>depends</i></p>
+
+<div>
+  <h2>inline</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-inline">
+      Hello <span class="green">there</span>. How
+      <span class="purple">are</span> you?
+    </div>
+    <div class="desc">
+      <ul>
+        <li>starts on the same line if there is enough space</li>
+        <li>does ignore height and width properties</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>block</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-block">
+      Hello there. How <span class="purple block">are</span> you?
+    </div>
+    <div class="desc">
+      <ul>
+        <li>always starts on a new line</li>
+        <li>width defaults to 100%</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>inline-block</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-block">
+      Hello there. How <span class="purple inline-block">are</span> you?
+    </div>
+    <div class="desc">
+      <ul>
+        <li>combines inline and block</li>
+        <li>start in the same line</li>
+        <li>accepts width and height properties</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>flex</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-flex">
+      Hello there. How
+      <span class="purple flex">are</span> you?
+    </div>
+    <div class="desc">
+      <ul>
+        <li>same as block but with flex abilities (see links)</li>
+        <li>inline-flex is the same as inline-block but with dlex abilities</li>
+        <li>
+          all continuous text (not interuppted by and tag) inside of a flex
+          element is considered as child as well
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>none</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-none">
+      <p>Hello there. How <span class="purple none">are</span> you?</p>
+      <p>Hello there. How <span class="purple hidden">are</span> you?</p>
+    </div>
+    <div class="desc">
+      <ul>
+        <li>hides element and removes it from the document flow</li>
+        <li>
+          visibility: hidden (second line) makes the element invisible, but it
+          remains in the document flow
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
