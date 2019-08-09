@@ -1,0 +1,46 @@
+.element {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo-sticky {
+  .green {
+    position: sticky;
+    top: 50px;
+  }
+
+  .purple {
+    width: 120px;
+  }
+}
+
+.demo-relative {
+  .green {
+    position: relative;
+    left: 30px;
+    top: 50px;
+  }
+}
+
+.demo-absolute {
+  position: relative;
+  margin-bottom: 50px;
+
+  .green {
+    position: absolute;
+    left: 30px;
+    top: 50px;
+  }
+}
+
+.demo-fixed {
+  .green {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+  }
+}

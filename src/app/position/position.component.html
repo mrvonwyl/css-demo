@@ -1,1 +1,81 @@
-<p>position works!</p>
+<h1>Position</h1>
+<p>
+  info:
+  <a
+    href="https://www.w3schools.com/cssref/pr_class_position.asp"
+    target="_blank"
+    >w3schools</a
+  >
+</p>
+<p>
+  default: static
+</p>
+<p>
+  needs helper properties: top, bottom, left, right
+</p>
+
+<div>
+  <h2>Sticky</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-sticky">
+      <div class="element green">sticky</div>
+      <div class="element purple"></div>
+    </div>
+    <div class="desc">
+      sticks within the space of its parent. at least one helper property must
+      be defined. stays in the document flow
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>Static</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-static">
+      <div class="element green"></div>
+      <div class="element purple"></div>
+    </div>
+    <div class="desc">
+      default (nothing special)
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>Relative</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-relative">
+      <div class="element green">relative</div>
+      <div class="element purple"></div>
+    </div>
+    <div class="desc">
+      relative to its original position. stays in the document flow
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>Absolute</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-absolute">
+      <div class="element green">absolute</div>
+      <div class="element purple"></div>
+    </div>
+    <div class="desc">
+      relative to its closest non-static parent. leaves the document flow
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>Fixed</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-fixed">
+      <div class="element green">fixed</div>
+      <div class="element purple"></div>
+    </div>
+    <div class="desc">
+      relative to viewport. leaves the document flow
+    </div>
+  </div>
+</div>

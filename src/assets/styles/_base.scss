@@ -23,3 +23,20 @@ a {
     color: $color-base;
   }
 }
+
+.content {
+  padding: $spacing;
+}
+
+.demo-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.green {
+  background: #ced;
+}
+
+.purple {
+  background: #cbf;
+}
