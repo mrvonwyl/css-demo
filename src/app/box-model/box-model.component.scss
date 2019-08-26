@@ -1,0 +1,28 @@
+.demo {
+  border: 1px dotted black;
+  margin-right: 50px;
+}
+
+.element {
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 3px solid black;
+  display: block;
+}
+
+.demo-content-box {
+  .purple {
+    width: calc(100% - 46px);
+  }
+}
+
+.demo-border-box {
+  .element {
+    box-sizing: border-box;
+  }
+
+  .purple {
+    width: calc(100% - 20px);
+  }
+}

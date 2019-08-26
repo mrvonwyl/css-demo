@@ -1,1 +1,67 @@
-<p>box-model works!</p>
+<h1>Box Model, Marging, Padding, Box-Sizing</h1>
+<p>
+  info:
+  <a href="https://www.w3schools.com/css/css3_box-sizing.asp" target="_blank"
+    >w3schools box sizing</a
+  >
+</p>
+<p>
+  box-sizing default: content-box<br />
+  margin default: varies (mostly 0)<br />
+  padding default: varies (mostly 0)
+</p>
+
+<h3>General Info</h3>
+
+<ul>
+  <li>
+    margin, border, padding, content<br />
+    <img src="../../assets/box-model.png" />
+  </li>
+  <li>
+    margin and padding property shortcuts:
+    <ul>
+      <li>margin-top: <b>top</b>, margin-right: <b>right</b></li>
+      <li>margin: <b>top right bottom left</b></li>
+      <li>margin: <b>top/bottom right/left</b></li>
+      <li>margin: <b>top right/left bottom</b></li>
+    </ul>
+  </li>
+  <li>
+    margins of siblings are overlapping, the bigger value is relevant (e.g.
+    margin-bottom of the green box and margin-top of the purple box)
+  </li>
+</ul>
+
+<div>
+  <h2>content-box</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-content-box">
+      <div class="element green">width: 100%;</div>
+      <div class="element purple">width: calc(100% - 42px);</div>
+    </div>
+    <div class="desc">
+      <ul>
+        <li>width and height properties affect only the content</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>border-box</h2>
+  <div class="demo-wrapper">
+    <div class="demo demo-border-box">
+      <div class="element green">width: 100%;</div>
+      <div class="element purple">width: calc(100% - 20px);</div>
+    </div>
+    <div class="desc">
+      <ul>
+        <li>
+          width and height properties affect the content including padding and
+          border
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
