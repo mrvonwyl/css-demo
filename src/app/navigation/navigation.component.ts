@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
   links = [
+    { path: '/general-info', label: 'General Info' },
     { path: '/position', label: 'Position' },
     { path: '/display', label: 'Display' },
-    { path: '/links', label: 'Links' },
-    { path: '/box-model', label: 'Box Model' }
+    { path: '/box-model', label: 'Box Model' },
+    { path: '/links', label: 'Links' }
   ];
 
   constructor() {}

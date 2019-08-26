@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: $font-family;
+  line-height: 24px;
 }
 
 a {
@@ -21,6 +22,16 @@ a {
   &:hover {
     background: $color-highlight;
     color: $color-base;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  th,
+  td {
+    text-align: left;
+    border: 1px solid grey;
+    padding: 5px 10px;
   }
 }
 

@@ -8,6 +8,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { DisplayComponent } from './display/display.component';
 import { LinksComponent } from './links/links.component';
 import { BoxModelComponent } from './box-model/box-model.component';
+import { GeneralInfoComponent } from './general-info/general-info.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BoxModelComponent } from './box-model/box-model.component';
     NavigationComponent,
     DisplayComponent,
     LinksComponent,
-    BoxModelComponent
+    BoxModelComponent,
+    GeneralInfoComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

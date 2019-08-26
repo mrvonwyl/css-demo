@@ -1,0 +1,221 @@
+<h1>General Info</h1>
+<h2>Units</h2>
+<table>
+  <tr>
+    <td>px</td>
+    <td>absolute</td>
+    <td>1 pixel on your screen</td>
+  </tr>
+  <tr>
+    <td>%</td>
+    <td>relative</td>
+    <td>relative to the size of the parent element</td>
+  </tr>
+  <tr>
+    <td>em</td>
+    <td>relative</td>
+    <td>relative to the font size of the element</td>
+  </tr>
+  <tr>
+    <td>rem</td>
+    <td>relative</td>
+    <td>relative to the font size of the root (html) element</td>
+  </tr>
+  <tr>
+    <td>vw</td>
+    <td>relative</td>
+    <td>
+      relative to 1% of the viewport width (100vw is the entire width of the
+      viewport)
+    </td>
+  </tr>
+  <tr>
+    <td>vh</td>
+    <td>relative</td>
+    <td>
+      relative to 1% of the viewport height (100vh is the entire height of the
+      viewport)
+    </td>
+  </tr>
+</table>
+
+<h2>Selectors</h2>
+<p>
+  selectors are a matching pattern to apply the styles to e certain set of
+  elements
+</p>
+<table>
+  <tr>
+    <th>Selector</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>all elements</td>
+    <td>*</td>
+  </tr>
+  <tr>
+    <td>[htmlTag]</td>
+    <td>all [htmlTag] elements</td>
+    <td>div</td>
+  </tr>
+  <tr>
+    <td>#[id]</td>
+    <td>all elements that have a matching id attribute</td>
+    <td>#content</td>
+  </tr>
+  <tr>
+    <td>.[class]</td>
+    <td>all elements with a class attribute that <em>contains</em> [class]</td>
+    <td>button</td>
+  </tr>
+  <tr>
+    <td>[selectorA] [selectorB]</td>
+    <td>
+      all elements that match [selectorB] that have a element that matches
+      [selectorA] anywhere in their parent tree
+    </td>
+    <td>
+      #content .spacer
+    </td>
+  </tr>
+  <tr>
+    <td>[selectorA] > [selectorB]</td>
+    <td>
+      all elements that match [selectorB] that have a direct parent that matches
+      [selectorA]
+    </td>
+    <td>
+      #content .spacer
+    </td>
+  </tr>
+  <tr>
+    <td>[selectorA] + [selectorB]</td>
+    <td>
+      all elements that match [selectorB] that is placed immediately after an
+      element that matches [selectorA]
+    </td>
+    <td>
+      .button + .button
+    </td>
+  </tr>
+  <tr>
+    <td>[selectorA] ~ [selectorB]</td>
+    <td>
+      all elements that match [selectorB] that are placed immediately after an
+      element that matches [selectorA]
+    </td>
+    <td>
+      .button + .button
+    </td>
+  </tr>
+  <tr>
+    <td>[selectorA][selectorB]</td>
+    <td>
+      all elements that match [selectorA] and are preceeded by en element that
+      matches [selectorB] (anywhere in the DOM)
+    </td>
+    <td>div.blue</td>
+  </tr>
+  <tr>
+    <td>[selectorA], [selectorB]</td>
+    <td>
+      all elements that match either selector
+    </td>
+    <td>h1, h2</td>
+  </tr>
+  <tr>
+    <td>[attribute="[value]"]</td>
+    <td>
+      all elements that have an attribute that matches [value]<br />
+      = &gt; exact match<br />
+      ~= &gt; exact match of [value] for at least one element in a space
+      separated list<br />
+      |= &gt; starts with whole word [value] or followed by hyphen [value]-*<br />
+      ^= &gt; starts with [value]<br />
+      $= &gt; ends with [value]<br />
+      *= &gt; contains [value]
+    </td>
+    <td>a[target="_blank"]</td>
+  </tr>
+  <tr>
+    <td>:[pseudoClass]</td>
+    <td>
+      special
+      <a
+        href="https://www.w3schools.com/css/css_pseudo_classes.asp"
+        target="_blank"
+      >
+        pseudo classes
+      </a>
+      (:hover, :not(), :nth-child())
+    </td>
+    <td>:hover, :not(:last-child)</td>
+  </tr>
+  <tr>
+    <td>:[pseudoElement]</td>
+    <td>
+      special
+      <a
+        href="https://www.w3schools.com/css/css_pseudo_classes.asp"
+        target="_blank"
+      >
+        pseudo elements
+      </a>
+      (::before, ::first-line)
+    </td>
+    <td></td>
+  </tr>
+</table>
+
+<h2>Order and priority</h2>
+
+<p>
+  Earlier rules are overridden by later rules, if they have the same priority.
+  (no matter if spread over multiple files, the last file is the most relevant)
+</p>
+<p>Priorities (highest first):</p>
+<ul>
+  <li>!important</li>
+  <li>style attribute</li>
+  <li>id selector</li>
+  <li>class selector, pseudo-classes</li>
+  <li>type selector, pseudo-elements</li>
+  <li>universal selectors (*, ~, >, +)</li>
+</ul>
+
+<h2>Do's & don'ts</h2>
+<p>Disclaimer: These are my personal opinions.</p>
+<ul>
+  <li>use F12! it's your best friend</li>
+  <li>
+    use some sort of css reset (or do it your own) do get a decent base and to
+    avoid surpises
+  </li>
+  <li>
+    try to use rem, px for absolute measurements. you might use cm/mm for print
+    css
+  </li>
+  <li>
+    if you have a css problem, try to figure out what property of what element
+    causes it. always remove or exchange properties first, instead of trying to
+    override the with other ones. know what you are doing and know the
+    sideeffects
+  </li>
+  <li>
+    use float as rarly as possible, and if only for floating within a block, not
+    for layouting purposes
+  </li>
+  <li>
+    use tables only for content structuring, not for the page layout
+  </li>
+  <li>
+    display content dependent images with an img tag, not via background
+    property
+  </li>
+  <li>
+    never use inline css, except if it is a programmatical value and you cannot
+    apply additional css classes
+  </li>
+</ul>
